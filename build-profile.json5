@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Odoly\\.ohos\\config\\auto_debug_MyApplication2_com.example.myapplication_390086000108547817.cer",
+          "storePassword": "0000001B40C5C51E06669993048887D2E87D962AB21C4E2AD163A0C5DA7ED53A3BC50ADFF190F71F73C6F1",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BBD873BAAE77711F56BAEA0A9EEB8A74A5416DF279DF4E5684E82B5C8070EC90F31A083DB77B816",
+          "profile": "C:\\Users\\Odoly\\.ohos\\config\\auto_debug_MyApplication2_com.example.myapplication_390086000108547817.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Odoly\\.ohos\\config\\auto_debug_MyApplication2_com.example.myapplication_390086000108547817.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
