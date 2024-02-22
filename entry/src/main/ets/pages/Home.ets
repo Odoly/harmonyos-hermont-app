@@ -81,7 +81,6 @@ export struct Home {
             .fontSize(20)
             .margin({ top: 20, left: 3 })
 
-          //space: 横向布局元素间距
           Row({ space: 15 }) {
             ForEach(this.serviceType, (item, index) => {
               Column() {
