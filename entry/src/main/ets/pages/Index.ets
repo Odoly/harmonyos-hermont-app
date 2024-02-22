@@ -26,13 +26,12 @@ struct Index {
   }
 
   build() {
-    Column() {
+    Stack() {
       Tabs({ barPosition:BarPosition.End, controller: this.controller}) {
         TabContent() {
           Home()
         }.tabBar(this.TabBuilder("Home", 0, "/image/select_home.png", "/image/unselect_home.png"))
         .backgroundColor("#F6F6F5")
-        .padding({left: 15, right: 15})
 
         TabContent() {
           Column() {
@@ -81,12 +80,23 @@ struct Index {
         .backgroundColor("#ffffff")
       }
       .vertical(false)
-      .barHeight(55)
-      .backgroundColor('#000000')
+      .barHeight(80)
+      .barMode(BarMode.Fixed)
+      .barWidth('100%')
+      .backgroundColor('#160E31')
       .onChange((index: number) => {
         this.currentIndex = index
       })
       .scrollable(false)
-    }.width('100%')
+      .borderRadius(15)
+    }
+    .padding({
+      left: 15,
+      right: 15,
+      bottom: 15,
+    })
+    .width('100%')
+    .height('100%')
+    .backgroundColor("#F6F6F5")
   }
 }

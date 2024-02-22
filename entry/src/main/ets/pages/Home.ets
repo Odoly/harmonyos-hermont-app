@@ -109,5 +109,6 @@ export struct Home {
         }
       }
     }
+    .backgroundColor("#F6F6F5")
   }
 }
